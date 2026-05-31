@@ -27,7 +27,7 @@ Après installation, lance YTGrab depuis :
 - Le **menu d'applications** (cherche "YTGrab")
 - Le **terminal** avec la commande `ytgrab`
 
-### Installation manuelle (pour les curieux)
+### Installation manuelle :
 
 ```bash
 git clone https://github.com/fredo-aldo-create/YTGrab.git
@@ -35,7 +35,9 @@ cd YTGrab
 chmod +x install.sh
 ./install.sh
 ```
+OU
 
+curl -fsSL https://raw.githubusercontent.com/fredo-aldo-create/YTGrab/main/install.sh | bash
 ---
 
 ## Fonctionnalités
