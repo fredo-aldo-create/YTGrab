@@ -35,9 +35,6 @@ cd YTGrab
 chmod +x install.sh
 ./install.sh
 ```
-OU
-
-curl -fsSL https://raw.githubusercontent.com/fredo-aldo-create/YTGrab/main/install.sh | bash
 ---
 
 ## Fonctionnalités
