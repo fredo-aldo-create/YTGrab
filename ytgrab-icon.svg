@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Fond arrondi style YouTube -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF0033"/>
+      <stop offset="100%" stop-color="#CC0026"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Rectangle arrondi rouge YouTube -->
+  <rect x="16" y="40" width="224" height="176" rx="40" ry="40" fill="url(#bgGrad)" filter="url(#shadow)"/>
+
+  <!-- Triangle "play" blanc (transformé en flèche download) -->
+  <!-- Le triangle pointe vers le bas pour évoquer le téléchargement -->
+  <g transform="translate(128, 128)">
+    <!-- Flèche de téléchargement intégrée -->
+    <path d="M -32 -28 L 32 -28 L 32 8 L 56 8 L 0 64 L -56 8 L -32 8 Z"
+          fill="white"
+          stroke="white"
+          stroke-width="2"
+          stroke-linejoin="round"/>
+  </g>
+
+  <!-- Petit texte "YT" en bas (optionnel, discret) -->
+  <text x="128" y="240"
+        text-anchor="middle"
+        font-family="Arial Black, sans-serif"
+        font-size="20"
+        font-weight="900"
+        fill="#FF0033"
+        letter-spacing="2">YTGRAB</text>
+</svg>
